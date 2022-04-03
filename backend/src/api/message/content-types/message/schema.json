@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messages",
+  "info": {
+    "singularName": "message",
+    "pluralName": "messages",
+    "displayName": "Message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "text",
+      "required": false
+    },
+    "postedBy": {
+      "type": "string"
+    },
+    "timesUpdated": {
+      "type": "integer"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "content"
+    }
+  }
+}
